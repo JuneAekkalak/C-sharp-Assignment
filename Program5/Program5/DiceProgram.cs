@@ -2,21 +2,12 @@
 
 namespace Program5
 {
-    class dice
-    {
-        private static Random random = new Random();
-
-        public int Throw()
-        {
-            return random.Next(1, 7); // random 1-6
-        }
-    }
     class DiceProgram
     {
         public static void Main()
         {
             int mark = 0, i = 1;
-            dice dic1 = new dice();
+            Dice dic1 = new Dice();
 
             while (mark != 1)
             {
@@ -31,3 +22,4 @@ namespace Program5
         }
     }
 }
+
